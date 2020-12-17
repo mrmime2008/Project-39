@@ -11,7 +11,7 @@ var fruits;
 var fruitGroup;
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
-
+var score = 0;
 
 function preload(){
   back_img = loadImage("images/jungle.jpg");
@@ -34,7 +34,7 @@ function setup() {
 
 function draw() {
   background(back_img);
-  
+  text("Score: " + score,20,20);
   if (playerCount === 2) {
     game.update(1);
   }
